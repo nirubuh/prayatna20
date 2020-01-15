@@ -213,5 +213,4 @@ List getLessons() {
         content:
         "Are you a math geek? Does Maths run in your veins??\nAre you ready to unleash the math destruction? Then be ready to witness the wrath of math as the great minds battle for the glory to become next Archimedes!!!?\nCAUTION : Don't Drink and Derive"),
 
-  ];
-}
+  ];}
