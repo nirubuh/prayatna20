@@ -99,46 +99,44 @@ class DetailPage extends StatelessWidget {
       ],
     );
 
+    _launchURL ()
+    {
+      const url = 'https://www.prayatna.org.in/';
+      launch(url);
+    }
     _launchURLp ()
     {
       const url = 'https://www.prayatna.org.in/';
       launch(url);
     }
-    MaterialButton(
-        child: GestureDetector(
-            child: RaisedButton(
-              onPressed: _launchURLp, //() => {},
-              color: Color.fromRGBO(7, 4, 23, 1.0),
-              child:
-              Text("Participate", style: TextStyle(color: Color.fromRGBO(45,234,220,1.0),fontFamily: 'Quicksand'),),
-
-            ))
-    );
-
     final bottomContentText = Text(
       lesson.content,
       style: TextStyle(fontSize: 18.0, fontFamily: 'Quicksand'),
     );
 
 
-     _launchURL () {
-      const url = 'https://www.prayatna.org.in/';
-      launch(url);
-    }
-
-
-
     final readButton = Container(
         padding: EdgeInsets.symmetric(vertical: 16.0),
         width: MediaQuery.of(context).size.width,
-        child: GestureDetector(
-        child: RaisedButton(
-            onPressed: _launchURL, //() => {},
-          color: Color.fromRGBO(7, 4, 23, 1.0),
-            child:
-          Text("VIEW RESULT", style: TextStyle(color: Color.fromRGBO(45,234,220,1.0),fontFamily: 'Quicksand'),),
+        child: Column(
+          children: <Widget>[
+            GestureDetector(
+            child: RaisedButton(
+              onPressed: _launchURL, //() => {},
+              color: Color.fromRGBO(7, 4, 23, 1.0),
+              child:
+              Text("VIEW RESULT", style: TextStyle(color: Color.fromRGBO(45,234,220,1.0),fontFamily: 'Quicksand'),),
 
-        )));
+        )),
+            GestureDetector(
+                child: RaisedButton(
+                  onPressed: _launchURLp, //() => {},
+                  color: Color.fromRGBO(7, 4, 23, 1.0),
+                  child:
+                  Text("PARTICIPATE", style: TextStyle(color: Color.fromRGBO(45,234,220,1.0),fontFamily: 'Quicksand'),),
+
+                ))
+          ]));
 
 
 
