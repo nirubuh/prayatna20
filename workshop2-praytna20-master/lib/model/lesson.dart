@@ -1,5 +1,5 @@
 // TODO Implement this library.
-//import 'package:praytna2/generated/i18n.dart';
+import 'package:praytna2/generated/i18n.dart';
 
 class Lesson {
   String title;

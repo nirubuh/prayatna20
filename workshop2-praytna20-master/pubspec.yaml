@@ -19,14 +19,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-     #The following adds the Cupertino Icons font to your application.
-    #Use with the CupertinoIcons class for iOS style icons.
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   gestures: ^0.0.1
   url_launcher: ^5.4.1
-  #gesture detector
-
-
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +43,7 @@ flutter:
   uses-material-design: true
   assets:
     - prayatna-logo-withdate.png
+    - 2.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -82,13 +81,3 @@ fonts:
       - asset: fonts/Raleway-Regular.ttf
       - asset: fonts/Raleway-Thin.ttf
         style: normal
-  - family: RobotoMono
-    fonts:
-      - asset: fonts/RobotoMono-Regular.ttf
-      - asset: fonts/RobotoMono-Bold.ttf
-        weight: 700
-  - family: Quicksand
-    fonts:
-      - asset: fonts/RobotoMono-Regular.ttf
-      - asset: fonts/RobotoMono-Bold.ttf
-        weight: 700
